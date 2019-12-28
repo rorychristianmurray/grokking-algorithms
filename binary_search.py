@@ -6,9 +6,6 @@ def binary_search(sorted_arr, target):
     low = 0
     high = len(sorted_arr) - 1
 
-   
-    
-
     while low  <= high:
         # check middle element
         mid = (low + high) // 2 # int division

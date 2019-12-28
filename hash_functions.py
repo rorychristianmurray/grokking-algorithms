@@ -17,3 +17,21 @@ def check_voter(name):
 check_voter("Rory")
 check_voter("Abbey")
 check_voter("Rory")
+
+## caching example
+cache = {}
+
+def get_page(url):
+    if cache.get(url):
+        return cache[url]
+    else:
+        data = get_data_from_server(url)
+        cache[url] = data
+        return data
+
+## hashes are good for
+
+# modeling relationships from one thing to another thing
+# filtering out duplicates
+# caching/memoizing data instead of relying
+# on computation or the server
