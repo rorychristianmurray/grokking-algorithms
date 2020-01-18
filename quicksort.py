@@ -12,9 +12,6 @@ def recursive_count(arr):
 	return 1 + recursive_count(list[1:])
 
 
-# def print_items(list):
-#     for item in list:
-#         print(item)
 
 ## quicksort
 ## pick a pivot
@@ -35,6 +32,27 @@ def quicksort(arr):
         return quicksort(less) + [pivot] + quicksort(more)
 
 
+## best case is O(n log n) ****
+## pick a random pivot
+## quick sort is faster than merge sort 
+## despite similar Big O runtimes because
+## in this case the constant matters
+
+
+
+
+def print_items(list):
+    for item in list:
+        print(item)
+
+
+
+
+
+
+
+
+
 a1 = [1, 7, 6, 12, 9]
 a2 = [27, 5, 84, 148, 23]
 a3 = [100, 4, 99, 17, 62]
@@ -48,3 +66,5 @@ print("\n")
 print(t2)
 print("\n")
 print(t3)
+
+

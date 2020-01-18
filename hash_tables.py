@@ -35,3 +35,15 @@ def get_page(url):
 # filtering out duplicates
 # caching/memoizing data instead of relying
 # on computation or the server
+
+## Hash tables have a big O time of:
+
+## Average case:
+# O(1) for insert, search, and delete
+
+## Worst case:
+# O(n) for insert, search, and delete
+
+## To avoid collisions, we need
+# a low load factor
+# a good hash function
